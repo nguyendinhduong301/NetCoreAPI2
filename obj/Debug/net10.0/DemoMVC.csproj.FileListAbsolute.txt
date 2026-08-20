@@ -95,3 +95,4 @@ C:\Users\DELL\DemoMVC\obj\Debug\net10.0\refint\DemoMVC.dll
 C:\Users\DELL\DemoMVC\obj\Debug\net10.0\DemoMVC.pdb
 C:\Users\DELL\DemoMVC\obj\Debug\net10.0\DemoMVC.genruntimeconfig.cache
 C:\Users\DELL\DemoMVC\obj\Debug\net10.0\ref\DemoMVC.dll
+C:\Users\DELL\DemoMVC\obj\Debug\net10.0\DemoMVC.sourcelink.json
