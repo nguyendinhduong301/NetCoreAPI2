@@ -1,0 +1,19 @@
+<h2>Cửa hàng trái cây</h2>
+@if (TempData["Success"] != null)
+{
+    <p>@TempData["Success"]</p>
+}
+<form method="post" action="/Lesson5/Create">
+      <label>Mã sản phẩm:</label>
+    <input type="text" name="MaSP">
+    <br><br>
+
+    <label>Tên sản phẩm:</label>
+    <input type="text" name="TenSP">
+    <br><br>
+
+    <label>Đơn giá:</label>
+    <input type="number" name="DonGia">
+    
+    <button type="submit">Thêm sản phẩm</button>
+</form>

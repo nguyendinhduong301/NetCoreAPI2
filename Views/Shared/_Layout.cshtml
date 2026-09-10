@@ -26,6 +26,45 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Student</a>
+                        </li>
+                        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-dark" href="#" 
+       id="lessonDropdown" role="button" 
+       data-bs-toggle="dropdown" aria-expanded="false">
+        Lesson
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="lessonDropdown">
+        <li>
+            <a class="dropdown-item" asp-controller="Lesson" asp-action="Lesson1">
+                Lesson 1
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" asp-controller="Lesson" asp-action="Lesson2">
+                Lesson 2
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" asp-controller="Lesson" asp-action="Lesson3">
+                Lesson 3
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" asp-controller="Lesson" asp-action="Lesson4">
+                Lesson 4
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" asp-controller="Lesson" asp-action="Lesson5">
+                Lesson 5
+            </a>
+        </li>
+    </ul>
+</li>>   
                     </ul>
                 </div>
             </div>
