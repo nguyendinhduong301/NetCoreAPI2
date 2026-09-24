@@ -12,7 +12,7 @@ namespace DemoMVC.Controllers
         [HttpPost]
         public IActionResult Index(Student student)
         {
-            String KetQua = "Xin chào " + student.Fullname + 
+            String KetQua = "Xin chào " + student.FullName + 
                             ", Địa chỉ: " + student.Address +
                             ", Trường: " + student.University + " !";
            
