@@ -1,0 +1,55 @@
+@model DemoMVC.Models.Student
+
+<h1>Thêm sinh viên</h1>
+
+<form asp-action="Create" method="post">
+
+    <div>
+        <label asp-for="FullName">Họ tên</label>
+        <input asp-for="FullName" />
+        <span asp-validation-for="FullName" style="color:red"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Address">Địa chỉ</label>
+        <input asp-for="Address" />
+        <span asp-validation-for="Address" style="color:red"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" style="color:red"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="DepartmentCode">Khoa</label>
+
+        <select asp-for="DepartmentCode"
+                asp-items="ViewBag.Departments">
+            <option value="">-- Chọn khoa --</option>
+        </select>
+
+        <span asp-validation-for="DepartmentCode"
+              style="color:red"></span>
+    </div>
+
+    <br />
+
+    <button type="submit">Thêm sinh viên</button>
+
+    <a asp-action="Index">Quay lại danh sách</a>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

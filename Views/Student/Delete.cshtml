@@ -1,0 +1,20 @@
+@model DemoMVC.Models.Student
+
+<h1>Xóa sinh viên</h1>
+
+<h3>Bạn có chắc muốn xóa sinh viên này?</h3>
+
+<div>
+    <p><strong>Mã sinh viên:</strong> @Model.StudentCode</p>
+    <p><strong>Họ tên:</strong> @Model.FullName</p>
+    <p><strong>Địa chỉ:</strong> @Model.Address</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="StudentCode" />
+
+    <button type="submit">Xóa</button>
+
+    <a asp-action="Index">Hủy</a>
+</form>
